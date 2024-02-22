@@ -151,7 +151,7 @@ const renderRepoCard = (repo, options = {}) => {
 
   const card = new Card({
     defaultTitle: header.length > 35 ? `${header.slice(0, 35)}...` : header,
-    titlePrefixIcon: icons.contribs,
+    titlePrefixIcon: false, //icons.contribs,
     width: 400,
     height,
     border_radius,
