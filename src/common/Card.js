@@ -259,7 +259,7 @@ class Card {
         <g
           data-testid="main-card-body"
           transform="translate(0, ${
-            this.hideTitle ? this.paddingX : this.paddingY + 20
+            this.hideTitle ? this.paddingX : this.paddingY + 15
           })"
         >
           ${body}

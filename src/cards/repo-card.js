@@ -102,7 +102,7 @@ const renderRepoCard = (repo, options = {}) => {
     .join("");
 
   const height =
-    (descriptionLinesCount > 1 ? 120 : 110) +
+    (descriptionLinesCount > 1 ? 110 : 110) +
     descriptionLinesCount * lineHeight;
 
   const i18n = new I18n({
@@ -180,11 +180,11 @@ const renderRepoCard = (repo, options = {}) => {
           : ""
     }
 
-    <text class="description" x="25" y="-5">
+    <text class="description" x="20" y="-5">
       ${descriptionSvg}
     </text>
 
-    <g transform="translate(25, ${height - 75})">
+    <g transform="translate(25, ${height - 70})">
       ${starAndForkCount}
     </g>
   `);
