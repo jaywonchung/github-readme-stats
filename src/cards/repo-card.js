@@ -79,7 +79,7 @@ const renderRepoCard = (repo, options = {}) => {
     description_lines_count,
   } = options;
 
-  const lineHeight = 10;
+  const lineHeight = 5;
   const header = show_owner ? nameWithOwner : name;
   const langName = (primaryLanguage && primaryLanguage.name) || "Unspecified";
   const langColor = (primaryLanguage && primaryLanguage.color) || "#333";
@@ -98,7 +98,7 @@ const renderRepoCard = (repo, options = {}) => {
     : multiLineDescription.length;
 
   const descriptionSvg = multiLineDescription
-    .map((line) => `<tspan dy="1.2em" x="25">${encodeHTML(line)}</tspan>`)
+    .map((line) => `<tspan dy="1.2em" x="20">${encodeHTML(line)}</tspan>`)
     .join("");
 
   const height =
@@ -152,7 +152,7 @@ const renderRepoCard = (repo, options = {}) => {
   const card = new Card({
     defaultTitle: header.length > 35 ? `${header.slice(0, 35)}...` : header,
     titlePrefixIcon: icons.contribs,
-    width: 400,
+    width: 350,
     height,
     border_radius,
     colors,
@@ -184,7 +184,7 @@ const renderRepoCard = (repo, options = {}) => {
       ${descriptionSvg}
     </text>
 
-    <g transform="translate(30, ${height - 75})">
+    <g transform="translate(25, ${height - 75})">
       ${starAndForkCount}
     </g>
   `);

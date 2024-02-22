@@ -317,8 +317,8 @@ export const themes = {
   },
   github_dark: {
     title_color: "58A6FF",
-    icon_color: "1F6FEB",
-    text_color: "C3D1D9",
+    icon_color: "848d97",
+    text_color: "848d97",
     bg_color: "0D1117",
   },
   github_dark_dimmed: {
