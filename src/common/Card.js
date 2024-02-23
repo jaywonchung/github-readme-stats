@@ -217,8 +217,9 @@ class Card {
         <title id="titleId">${this.a11yTitle}</title>
         <desc id="descId">${this.a11yDesc}</desc>
         <style>
+          @import url('https://fonts.googleapis.com/css?family=Roboto');
           .header {
-            font: 600 14px '-apple-system', 'Segoe UI', Ubuntu, Sans-Serif;
+            font: 600 14px Roboto, 'Segoe UI', Ubuntu, Sans-Serif;
             fill: ${this.colors.titleColor};
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
