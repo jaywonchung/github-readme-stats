@@ -7,10 +7,10 @@ export const themes = {
     border_color: "e4e2e2",
   },
   default_repocard: {
-    title_color: "2f80ed",
-    icon_color: "586069", // icon color is different
-    text_color: "434d58",
-    bg_color: "fffefe",
+    title_color: "0969da",
+    icon_color: "656D76", // icon color is different
+    text_color: "656D76",
+    bg_color: "ffffff",
   },
   transparent: {
     title_color: "006AFF",
@@ -316,9 +316,9 @@ export const themes = {
     bg_color: "1D252C",
   },
   github_dark: {
-    title_color: "58A6FF",
-    icon_color: "848d97",
-    text_color: "848d97",
+    title_color: "2F81F7",
+    icon_color: "848D97",
+    text_color: "848D97",
     bg_color: "0D1117",
   },
   github_dark_dimmed: {
